@@ -22,6 +22,7 @@ The deliverable should be sent via GitHub repository, and include a dump of the 
 You should have both a `movie` and `theater` object type. It is completely up to you what fields should be included on each of these object types.
 
 ## Object Functionality
+optional - *every wrong request should return user-friendly message*
 
 The following endpoints should be supported for each object type:
 * List - we should be able to pull a list of objects
@@ -37,3 +38,9 @@ The following endpoints should be supported for each object type:
 ## Custom Endpoint
 
 There should be an endpoint which utilizes the Google Maps API in order to perform a geospatial search for objects near an address. This can be implemented in whatever way you see fit, either finding all theaters near an address, or more specifically, searching for specific movies paying in theaters near an address.
+
+## One more thing
+
+You should think of this APP like it's first stage of the large enterprise system
+You shouldn't simplify your approach (Meaning: yes, you have a little app, but imagine that it's only the first part of requirements and tomorrow you will work on expansion of this app)
+So use your best approaches, and create architeture that can foreseen extension
