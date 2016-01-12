@@ -41,6 +41,6 @@ There should be an endpoint which utilizes the Google Maps API in order to perfo
 
 ## One more thing
 
-You should think of this APP like it's first stage of the large enterprise system
-You shouldn't simplify your approach (Meaning: yes, you have a little app, but imagine that it's only the first part of requirements and tomorrow you will work on expansion of this app)
-So use your best approaches, and create architeture that can foreseen extension
+You should think of this APP like it's first stage of the large enterprise system  
+You shouldn't simplify your approach (Meaning: yes, you have a little app, but imagine that it's only the first part of requirements and tomorrow you will work on expansion of this app)  
+So use your best approaches, and create architeture that can foreseen extension  
