@@ -1,6 +1,6 @@
 # Objective
 
-You will be building a single page app for listing, editing, and viewing movies. The app should have 2 pages, which are detailed in the project briefing, and the only requirement is that the app is built upon Ember.js. Ember data is optional in this assignment. It's up to you on how detailed you want to be with the page's markup and styles, you'll primarily be judged on how functional your app is, and not how pretty.
+You will be building a single page app for listing, editing, and viewing movies. The app should have 2 pages, which are detailed in the project briefing, and the only requirement is that the app is built upon Ember.js. Ember data is optional in this assignment. It's up to you on how detailed you want to be with the page's markup and styles, you'll primarily be judged on how functional your app is, and not how pretty. Unit and integration testing is welcomed.
 
 # Requirements
 
