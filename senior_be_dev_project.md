@@ -37,7 +37,9 @@ The following endpoints should be supported for each object type:
 
 ## Custom Endpoint
 
-There should be an endpoint which utilizes the Google Maps API in order to perform a geospatial search for objects near an address. This can be implemented in whatever way you see fit, either finding all theaters near an address, or more specifically, searching for specific movies paying in theaters near an address.
+There should be an endpoint which utilizes the Google Maps API in order to perform a geospatial search for objects near an address. The endpoint should UTILIZE the google maps API to geolocate an address to lat/lon - then we should do that geospatial lookup locally using the lat/lon provided by Google Maps  
+So - > Google Maps, Address to Lat/Long -> Lat/Long to DB for geospatial search  
+This can be implemented in whatever way you see fit, either finding all theaters near an address, or more specifically, searching for specific movies paying in theaters near an address.
 
 ## One more thing
 
