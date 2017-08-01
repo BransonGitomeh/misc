@@ -10,7 +10,7 @@ set -e
 # ./distribute.sh ./TravelBank.ipa 4.3.0 1 feature-proj-op-500
 #===============================================================================
 
-TARGET="build.travelbank.com"
+TARGET="bob.travelbank.com"
 PROJECT="TravelBank"
 FILE=$1
 VERSION=$2
@@ -18,7 +18,7 @@ BUILD=$3
 BRANCH_NAME=${BRANCH_NAME:-$4}
 FEATURE=${BRANCH_NAME/\//-}
 BUILD_TIME=`stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" $1`
-SECURE_TARGET="https://build.travelbank.com"
+SECURE_TARGET="https://bob.travelbank.com"
 
 echo $BRANCH_NAME
 echo $FEATURE
