@@ -24,7 +24,7 @@ echo $BRANCH_NAME
 echo $FEATURE
 
 echo "Generating ${PROJECT}-${VERSION}-${BUILD}.plist"
-cat > /Library/WebServer/Documents/ios/${FEATURE}/${PROJECT}-${VERSION}-${BUILD}.plist <<PLIST_DELIM
+cat > /Library/WebServer/Documents/${FEATURE}/ios/${PROJECT}-${VERSION}-${BUILD}.plist <<PLIST_DELIM
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -39,7 +39,7 @@ cat > /Library/WebServer/Documents/ios/${FEATURE}/${PROJECT}-${VERSION}-${BUILD}
      <key>kind</key>
      <string>software-package</string>
      <key>url</key>
-     <string>https://${TARGET}/ios/${FEATURE}/${PROJECT}.ipa</string>
+     <string>https://${TARGET}/${FEATURE}/ios/${PROJECT}.ipa</string>
     </dict>
    </array>
 
@@ -64,7 +64,7 @@ cat > /Library/WebServer/Documents/ios/${FEATURE}/${PROJECT}-${VERSION}-${BUILD}
 PLIST_DELIM
 
 echo "Generating index.html"
-cat > /Library/WebServer/Documents/ios/${FEATURE}/index.html <<INDEX_DELIM
+cat > /Library/WebServer/Documents/${FEATURE}/ios/index.html <<INDEX_DELIM
 <!DOCTYPE html>
 <html>
   <head>
@@ -89,7 +89,7 @@ cat > /Library/WebServer/Documents/ios/${FEATURE}/index.html <<INDEX_DELIM
       <p>${FEATURE}</p>
       <p>Built on ${BUILD_TIME}</p>
       <div class="link">
-        <a href="itms-services://?action=download-manifest;url=${SECURE_TARGET}/ios/${FEATURE}/${PROJECT}-${VERSION}-${BUILD}.plist">
+        <a href="itms-services://?action=download-manifest;url=${SECURE_TARGET}/${FEATURE}/ios/${PROJECT}-${VERSION}-${BUILD}.plist">
           Tap to install!
         </a>
       </div>
